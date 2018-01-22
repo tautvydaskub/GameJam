@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657868, g: 0.49641263, b: 0.57481706, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -214,7 +214,7 @@ MonoBehaviour:
     m_MaxTimerTimeout: 12000
     m_MinNetSimulatorTimeout: 1
     m_MaxNetSimulatorTimeout: 12000
-  m_Channels: 
+  m_Channels: 0500000000000000
   m_UseWebSockets: 0
   m_UseSimulator: 0
   m_SimulatedLatency: 1
@@ -403,15 +403,15 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4531538311479376, guid: aa0eb60ed52c1084cac15a16c8025bea, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 0.18005726
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4531538311479376, guid: aa0eb60ed52c1084cac15a16c8025bea, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -3.2590387
+      value: -3.5
       objectReference: {fileID: 0}
     - target: {fileID: 4531538311479376, guid: aa0eb60ed52c1084cac15a16c8025bea, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 2.5799217
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4531538311479376, guid: aa0eb60ed52c1084cac15a16c8025bea, type: 2}
       propertyPath: m_LocalRotation.x
@@ -440,3 +440,45 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: aa0eb60ed52c1084cac15a16c8025bea, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1458213015
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1458213017}
+  - component: {fileID: 1458213016}
+  m_Layer: 0
+  m_Name: Map Generator
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1458213016
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1458213015}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef7eff60f6790a74587a7d99ddf0874e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  obstacle1: {fileID: 1482364885018440, guid: 2810920d76184954482dbb8327e48cb0, type: 2}
+  obstacle2: {fileID: 1050554650241036, guid: 92004b76f411d364196c09aa70109b6f, type: 2}
+--- !u!4 &1458213017
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1458213015}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.42705476, y: -2.381, z: 0.10439491}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

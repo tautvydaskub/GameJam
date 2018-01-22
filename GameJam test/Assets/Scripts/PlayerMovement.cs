@@ -7,6 +7,9 @@ public class PlayerMovement : NetworkBehaviour
 	public Transform bulletSpawn;
 	private bool grounded;
 
+	void Start(){
+		Generator.PlayerCount++;
+	}
 	void Update()
 	{
 		if (isLocalPlayer)
@@ -18,7 +21,7 @@ public class PlayerMovement : NetworkBehaviour
 		{
 			//Fire();
 				if (grounded) {
-					this.gameObject.GetComponent<Rigidbody> ().velocity = new Vector3 (0, 5, 0);
+					this.gameObject.GetComponent<Rigidbody> ().velocity = new Vector3 (0, 10, 0);
 				}
 		}
 
